@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancing HTML5 Contents</title>
+</head>
+<body>
+    <!-- List -->
+     <h2>List of PLP course</h2>
+     <ul>
+        <li>Web Technoogies V2.0</li>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ol>
+        <li>Python programming</li>
+        <ol>
+            <li>flutter</li>
+            <li>Dart</li>
+            <li>Django</li>
+
+        </ol>
+        <li>Database</li>
+        <ol>
+            <li>SQL</li>
+            <ul>
+                <li>MYSQL</li>
+                <li>POSTGRESQL</li>
+                <li>SQLITE</li>
+                <li>ORACLE</li>
+            </ul>
+            <li>NOSQL</li>
+            <ul>
+                <li>MONGODB</li>
+                <li>CASSANDRA</li>
+                <li>REDIS</li>
+                <li>DYNAMODB</li>
+            </ul>
+        </ol>
+        <li>Software Engineering</li>
+        <li>Entrepreneurship and Personal Developemnt</li>
+     </ul>
+     <!-- table  -->
+      <h2>PLP program Lists</h2>
+      <table border="1">
+        <tr>
+            <th>Web Technoogies V2.0</th>
+            <th>Python programming</th>
+            <th>Database</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>flutter</td>
+            <td>MYSQL</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Dart</td>
+            <td>MONGODB</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Django</td>
+            <td>POSTGRESQL</td>
+        </tr>
+      </table>
+     <!-- media content such as images, audio, or video using semantic HTML5 elements -->
+     <h2>Nature Image</h2>
+     <img src="https://media.istockphoto.com/id/1458782106/it/foto/vista-aerea-panoramica-del-paesaggio-montano-con-una-foresta-e-il-fiume-cristallino-nel-parco.jpg?s=1024x1024&w=is&k=20&c=5i8Q9BayLPz26OAGFattAAy_iZR1f01_-4udYA52UdM=" alt="Nature Image" width="560" height="315"><br>
+     <h2>New Ethiopian Amharic Music</h2>
+     <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/PsfVYQ8zd4M?list=RDPsfVYQ8zd4M&start_radio=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+     </iframe>
+
+     <!-- form -->
+      <h2>Submit-Form</h2>
+      <form action="Submit-Form" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter first Name here.." required>
+
+            <label for="mname">Middle Name:</label>
+            <input type="text" id="mname" name="mname">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter last Name here.." required>
+        </fieldset><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email here...">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password here.." minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters"><br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">--Select your Country--</option>
+            <option value="Et">Ethiopia</option>
+            <option value="It">Italy</option>
+            <option value="Ky">Kenya</option>
+            <option value="Us">USA</option>
+        </select><br><br>
+
+        <label for="cv">Upload Cv:</label>
+        <input type="file" id="file" name="file" accept="application/pdf"><br><br>
+
+        <label for="message">Write few comments:</label><br>
+        <textarea name="message" id="message" rows="5" cols="40" placeholder="Enter your message here.." required></textarea><br>
+        <input type="submit" name="send">
+      </form>   
+</body>
+</html>
